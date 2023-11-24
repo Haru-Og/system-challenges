@@ -9,7 +9,7 @@ preg_match_all('(https?://[-_.!~*\'()a-zA-Z0-9;/?:@&=+$,%#]+)', $text, $matches)
 $matches = array_unique($matches);
 
 // 先頭、末尾にあるクォーテーションを削除
-$matches = trim($matches, '"'')
+$matches = trim($matches, '"'');
 
 // アルファベット順にソート
 $matches = sort($matches);
